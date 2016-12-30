@@ -7,6 +7,9 @@ check:
 build:
 	docker build --tag cuda_torch:0.1 .
 
+commit:
+	docker commit -a "yongjian <weiqi5@qq.com>" -m "add cudnn, torch, darkforest" cuda_torch cuda_torch:0.2
+
 run:
 	nvidia-docker run -it -v /data:/data --name cuda_torch cuda_torch:0.1 /bin/bash
 

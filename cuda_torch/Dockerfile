@@ -1,8 +1,7 @@
 FROM nvidia/cuda:8.0-devel
 LABEL maintainer "yongjian <weiqi5@qq.com>"
 
-ADD apt/sources.list /etc/apt/sources.list
-
+#ADD apt/tsinghua.edu.cn.sources.list /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y git
@@ -23,7 +22,7 @@ RUN CUDNN_DOWNLOAD_SUM=a87cb2df2e5e7cc0a05e266734e679ee1a2fadad6f06af82a76ed81a2
 
 RUN git clone https://github.com/torch/distro.git ~/torch --recursive
 RUN cd ~/torch && bash install-deps
-RUN cd ~/torch && ./install.sh
+RUN cd ~/torch && ./install.sh -b
 
 RUN luarocks install class
 RUN luarocks install image
