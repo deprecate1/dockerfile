@@ -24,4 +24,5 @@ RUN CUDNN_DOWNLOAD_SUM=a87cb2df2e5e7cc0a05e266734e679ee1a2fadad6f06af82a76ed81a2
 RUN git clone https://github.com/torch/distro.git ~/torch --recursive
 RUN cd ~/torch && bash install-deps
 
-RUN git clone https://github.com/facebookresearch/darkforestGo.git ~/darforest --recursive
+RUN git clone https://github.com/facebookresearch/darkforestGo.git ~/darkforest       --recursive
+RUN git clone https://github.com/wjx0912/darkforest.data.git       ~/darkforest.data  --recursive
