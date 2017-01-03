@@ -7,4 +7,6 @@ I've contacted docker support team, and according to their response, the current
 
 So, for larger builds you have to either break them into several Automated Builds connected by FROM statements and Repository Links, or build them locally on your machine and push them to the repository.
 
-this is cuda base build.
+this container is base image for torch7.
+
+autobuild at [https://hub.docker.com/r/wjx0912/cuda_cudnn/](https://hub.docker.com/r/wjx0912/cuda_cudnn/)

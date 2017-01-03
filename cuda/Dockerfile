@@ -1,8 +1,8 @@
 FROM nvidia/cuda:8.0-devel
 LABEL maintainer "yongjian <weiqi5@qq.com>"
 
-#ADD apt/tsinghua.edu.cn.sources.list /etc/apt/sources.list
-#ADD apt/aliyun.sources.list /etc/apt/sources.list
+#ADD apt/tsinghua.edu.cn.sources.list    /etc/apt/sources.list
+#ADD apt/aliyun.sources.list             /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y git
