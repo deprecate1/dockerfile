@@ -11,7 +11,7 @@ commit:
 	docker commit -a "yongjian <weiqi5@qq.com>" -m "add cudnn, torch, darkforest" cuda_torch cuda_torch
 
 run:
-	nvidia-docker run -it -v /data:/data --name cuda_torch cuda_torch /bin/bash
+	nvidia-docker run -it -v /data:/data --name cuda_torch wjx0912/cuda_torch /bin/bash
 
 exec:
 	nvidia-docker exec -it cuda_torch /bin/bash
