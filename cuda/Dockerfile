@@ -8,7 +8,6 @@ RUN apt-get install -y curl
 RUN apt-get install -y git
 RUN rm -rf /var/lib/apt/lists/*
 
-ENV PATH=/root/torch/install/bin/:$PATH
 ENV CUDNN_VERSION 5
 LABEL com.nvidia.cudnn.version="5"
 
