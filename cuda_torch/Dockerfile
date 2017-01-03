@@ -1,4 +1,4 @@
-FROM nvidia/cuda:8.0-devel
+FROM wjx0912/cuda_cudnn:latest
 LABEL maintainer "yongjian <weiqi5@qq.com>"
 
 
