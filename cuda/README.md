@@ -1,14 +1,9 @@
-I've contacted docker support team, and according to their response, the current limits on Automated Builds are:
-
-- 2 hours
-- 2 GB RAM
-- 1 CPU
-- 30 GB Disk Space
-
-So, for larger builds you have to either break them into several Automated Builds connected by FROM statements and Repository Links, or build them locally on your machine and push them to the repository.
-
-this container is base image for torch7
+cuda8, cudnn5.1 from nvidia image
+=========================
+this container is base image, latest cuda and cudnn integrated.
 
 buld on localhost: docker build --tag cuda_cudnn .
 
-autobuild at hub.docker.com: [https://hub.docker.com/r/wjx0912/cuda_cudnn/](https://hub.docker.com/r/wjx0912/cuda_cudnn/)
+autobuild at hub.docker.com: [https://hub.docker.com/r/wjx0912/cuda_cudnn/]()
+
+other image such as torch7 base on this image, you can get it: [https://hub.docker.com/r/wjx0912/cuda_torch/]()

@@ -21,7 +21,7 @@ RUN CUDNN_DOWNLOAD_SUM=a87cb2df2e5e7cc0a05e266734e679ee1a2fadad6f06af82a76ed81a2
 #ADD cudnn-8.0-linux-x64-v5.1.tgz /usr/local
 #RUN ldconfig
 
-RUN git clone https://github.com/torch/distro.git ~/torch --recursive
+RUN git clone https://github.com/torch/distro.git                  ~/torch            --recursive
 RUN cd ~/torch && bash install-deps
 
 RUN git clone https://github.com/facebookresearch/darkforestGo.git ~/darkforest       --recursive
